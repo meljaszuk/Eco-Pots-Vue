@@ -88,6 +88,8 @@
       </div>
     </div>
   </section>
+
+  <div class="content__marker" id="features"></div>
 </template>
 
 <script>
