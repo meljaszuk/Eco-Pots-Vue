@@ -1,4 +1,4 @@
-  .header {
+.header {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -7,10 +7,10 @@
   overflow-x: hidden;
   position: relative;
 
- @include alert-on;
+  @include alert-on;
 
   @include tablet {
-    background-image: url('./images/shape.png');
+    background-image: url("images/shape.png");
     background-repeat: no-repeat;
     background-position: calc($tablet-mb - 404px) -2px;
   }
@@ -25,7 +25,7 @@
     justify-content: flex-start;
     width: 230px;
     transform: rotate(90deg);
-    background-image: url('././icons/arrow-down.png');
+    background-image: url("icons/arrow-down.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 140px center;
@@ -78,7 +78,6 @@
       padding-left: calc($desktop-mb + 330px);
     }
   }
-
 
   &__price {
     @include font-price;
@@ -137,7 +136,7 @@
 
     @include tablet {
       padding: 29px calc($tablet-mb + $tablet-padding);
-      background-image: url('./images/shape.png');
+      background-image: url("images/shape.png");
       background-position: calc((100vw - 768px) / 2 - 404px) 0;
     }
 
@@ -150,7 +149,6 @@
       width: 134px;
 
       @include icon-animation;
-
     }
 
     &__burger {
@@ -408,5 +406,3 @@
     }
   }
 }
-
-
