@@ -13,6 +13,6 @@ import TheWelcome from "./components/TheWelcome.vue";
       height="125"
     />
 
-    <div class="wrapper">hedddddddll!!!!!</div>
+    <div class="wrapper">SHOUD WORK NOW</div>
   </header>
 </template>
