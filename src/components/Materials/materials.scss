@@ -1,8 +1,7 @@
 .materials {
   transform: translate(0);
-  background-image: url('./images/bcg.jpg');
+  background-image: url("/images/bcg.jpg");
   background-repeat: no-repeat;
-
 
   @include alert-on;
 
@@ -17,7 +16,7 @@
   }
 
   @media (min-width: 391px) {
-   background-position: center 80px;
+    background-position: center 80px;
   }
 
   @media (min-width: 590px) {
@@ -49,14 +48,11 @@
     height: 1100px;
   }
 
-
   @include desktop {
     min-height: 1350px;
     background-size: auto;
     padding-left: calc($desktop-mb + $desktop-padding);
   }
-
-
 
   &__slider {
     @media (max-width: 767px) {
@@ -164,7 +160,7 @@
   }
 
   &__circle {
-    background-image: url('./icons/circle-red.svg');
+    background-image: url("/icons/circle-red.svg");
     background-size: auto;
     width: 51px;
     height: 51px;
@@ -176,7 +172,7 @@
     cursor: pointer;
 
     @include tablet {
-    left: $tablet-mb;
+      left: $tablet-mb;
     }
 
     @include desktop {
@@ -184,13 +180,12 @@
     }
 
     &--clicked {
-      background-image: url('./icons/circle-black.svg');
+      background-image: url("/icons/circle-black.svg");
     }
 
     &--1 {
       @include tablet {
         transform: translateX(90px) translateY(290px);
-
       }
 
       @include desktop {
@@ -201,7 +196,6 @@
     &--2 {
       @include tablet {
         transform: translateX(225px) translateY(180px);
-
       }
 
       @include desktop {
@@ -212,7 +206,6 @@
     &--3 {
       @include tablet {
         transform: translateX(340px) translateY(330px);
-
       }
 
       @include desktop {
@@ -223,7 +216,6 @@
     &--4 {
       @include tablet {
         transform: translateX(400px) translateY(250px);
-
       }
 
       @include desktop {
@@ -234,7 +226,6 @@
     &--5 {
       @include tablet {
         transform: translateX(540px) translateY(50px);
-
       }
 
       @include desktop {
@@ -247,7 +238,6 @@
     @include font-s3;
 
     color: $grey-light;
-
 
     @include mobile {
       padding-bottom: 35px;
