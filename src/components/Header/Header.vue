@@ -53,7 +53,7 @@
 
             <div class="header__close-line">
               <img
-                src="./icons/line-white-vertical.svg"
+                src="/icons/line-white-vertical.svg"
                 alt=" "
                 class="content__dont-display-on-large-screen"
               />
