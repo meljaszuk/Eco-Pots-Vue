@@ -1,4 +1,4 @@
-  .swiper-container {
+.swiper-container {
   height: auto;
 
   @include mobile {
@@ -41,12 +41,12 @@
 
       &--1 {
         transform: translateX(40px) translateY(100px) !important;
-        height: 166px  !important;
+        height: 166px !important;
       }
 
       &--2 {
         transform: translateX(90px) translateY(-10px) !important;
-        height: 166px  !important;
+        height: 166px !important;
       }
 
       &--3 {
@@ -66,27 +66,27 @@
     }
 
     @include desktop {
-    left: $desktop-mb;
+      left: $desktop-mb;
 
-    &--1 {
-      transform: translateX(60px) translateY(370px) !important;
-      height: 166px  !important;
-    }
+      &--1 {
+        transform: translateX(60px) translateY(370px) !important;
+        height: 166px !important;
+      }
 
-    &--2 {
-      transform: translateX(180px) translateY(110px) !important;
-      height: 166px  !important;
-    }
+      &--2 {
+        transform: translateX(180px) translateY(110px) !important;
+        height: 166px !important;
+      }
 
-    &--3 {
-      transform: translateX(290px) translateY(500px) !important;
-      height: 214px !important;
-    }
+      &--3 {
+        transform: translateX(290px) translateY(500px) !important;
+        height: 214px !important;
+      }
 
-    &--4 {
-      transform: translateX(630px) translateY(190px) !important;
-      height: 214px !important;
-    }
+      &--4 {
+        transform: translateX(630px) translateY(190px) !important;
+        height: 214px !important;
+      }
 
       &--5 {
         transform: translateX(900px) translateY(365px) !important;
@@ -104,16 +104,14 @@
     padding-bottom: 35px;
 
     @include tablet {
-    display: none;
+      display: none;
     }
   }
-
-
 
   .swiper-pagination-bullet {
     width: 10px;
     height: 12px;
-    background-image: url('././icons/slider-white.png');
+    background-image: url("/icons/slider-white.png");
     opacity: 1;
     bottom: 0;
     background-color: transparent;
@@ -122,7 +120,7 @@
   .swiper-pagination-bullet-active {
     width: 10px;
     height: 12px;
-    background-image: url('././icons/slider-black.png');
+    background-image: url("/icons/slider-black.png");
     bottom: 0;
   }
 }
