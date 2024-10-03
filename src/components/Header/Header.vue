@@ -3,7 +3,7 @@
     <nav class="header__nav">
       <a href="index.html" class="header__logo">
         <img
-          src="../../assets/icons/logo.svg"
+          src="/icons/logo.svg"
           alt="POTR POTS LOGO"
           class="header__logo content__graphic-link"
         />
@@ -53,7 +53,7 @@
 
             <div class="header__close-line">
               <img
-                src="../../assets/icons/line-white-vertical.svg"
+                src="./icons/line-white-vertical.svg"
                 alt=" "
                 class="content__dont-display-on-large-screen"
               />
@@ -61,7 +61,7 @@
 
             <div class="header__close-cross">
               <img
-                src="../../assets/icons/cross.svg"
+                src="/icons/cross.svg"
                 alt=" "
                 class="content__dont-display-on-large-screen"
               />
@@ -72,7 +72,7 @@
 
       <a href="#slide-menu" class="header__graphic-link">
         <img
-          src="../../assets/icons/burger_menu.svg"
+          src="/icons/burger_menu.svg"
           alt="POTR POTS explore"
           class="header__menu content__graphic-link content__dont-display-on-large-screen"
         />
@@ -83,18 +83,14 @@
         href="#cart"
       >
         <img
-          src="../../assets/icons/cart.svg"
+          src="/icons/cart.svg"
           alt="POTR POTS buy now"
           class="header__menu content__graphic-link content__dont-display-on-small-screen"
         />
       </a>
     </nav>
 
-    <img
-      src="../../assets/images/potr_pots_1.jpg"
-      alt="potr pots"
-      class="header__image"
-    />
+    <img src="/images/potr_pots_1.jpg" alt="potr pots" class="header__image" />
 
     <div class="header__title-box">
       <h1 class="header__title">
@@ -139,6 +135,8 @@
 
     <div class="content__space"></div>
   </header>
+
+  <div class="content__marker" id="for_whom"></div>
 </template>
 
 <script>
