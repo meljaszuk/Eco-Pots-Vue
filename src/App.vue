@@ -9,6 +9,7 @@ import Benefits from "./components/Benefits/Benefits.vue";
 import Contact from "./components/Contact/Contact.vue";
 import Footer from "./components/Footer/Footer.vue";
 import Cart from "./components/Cart/Cart.vue";
+import ScreenAlert from "./components/ScreenAlert/ScreenAlert.vue";
 </script>
 
 <template>
@@ -24,4 +25,5 @@ import Cart from "./components/Cart/Cart.vue";
   </main>
   <Footer />
   <Cart />
+  <ScreenAlert />
 </template>
