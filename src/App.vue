@@ -7,6 +7,7 @@ import Materials from "./components/Materials/Materials.vue";
 import Product from "./components/Product/Product.vue";
 import Benefits from "./components/Benefits/Benefits.vue";
 import Contact from "./components/Contact/Contact.vue";
+import Cart from "./components/Cart/Cart.vue";
 </script>
 
 <template>
@@ -21,4 +22,5 @@ import Contact from "./components/Contact/Contact.vue";
     <Contact />
   </main>
   <Footer />
+  <Cart />
 </template>
