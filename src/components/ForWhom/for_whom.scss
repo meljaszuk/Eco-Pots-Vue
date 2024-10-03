@@ -10,7 +10,7 @@
     content: " ";
     width: 14px;
     height: 144px;
-    background-image: url('././icons/potr-right.svg');
+    background-image: url("/icons/potr-right.svg");
 
     @include mobile {
       display: none;
@@ -43,7 +43,7 @@
     background-size: auto;
 
     &--1 {
-      background-image: url('./icons/1.svg');
+      background-image: url("/icons/1.svg");
 
       @include mobile {
         padding-top: 70px;
@@ -59,7 +59,7 @@
           width: 19px;
           height: 40px;
 
-          background-image: url('./icons/slash.svg');
+          background-image: url("/icons/slash.svg");
           background-repeat: no-repeat;
         }
       }
@@ -71,7 +71,7 @@
     }
 
     &--2 {
-      background-image: url('./icons/2.svg');
+      background-image: url("/icons/2.svg");
       padding-top: 65px;
 
       @include tablet {
@@ -81,7 +81,7 @@
           width: 19px;
           height: 40px;
 
-          background-image: url('./icons/slash.svg');
+          background-image: url("/icons/slash.svg");
           background-repeat: no-repeat;
         }
 
@@ -93,7 +93,7 @@
     }
 
     &--3 {
-      background-image: url('./icons/3.svg');
+      background-image: url("/icons/3.svg");
 
       @include mobile {
         padding-top: 70px;
@@ -108,7 +108,7 @@
           display: inline-block;
           width: 19px;
           height: 40px;
-          background-image: url('./icons/slash.svg');
+          background-image: url("/icons/slash.svg");
           background-repeat: no-repeat;
         }
       }
@@ -131,16 +131,14 @@
     display: block;
   }
 
-
   &__star {
     display: block;
     padding-right: 40px;
-    background-image: url('./icons/star.svg');
+    background-image: url("/icons/star.svg");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: 10px center;
   }
-
 
   &__h2 {
     display: flex;
@@ -196,8 +194,7 @@
       padding: 0 $mobile-padding;
     }
 
-
-    @include tablet{
+    @include tablet {
       grid-column: 2 / 3;
       grid-row: 2 / 3;
       padding: 0;
@@ -222,7 +219,6 @@
       grid-row: 2 / 3;
       padding: 0 30px;
     }
-
 
     @include tablet {
       grid-column: 1 / 2;
@@ -389,7 +385,7 @@
         width: 340px;
       }
 
-    @include desktop {
+      @include desktop {
         justify-content: flex-start;
         padding-top: 0;
         padding-left: 0;
@@ -432,7 +428,6 @@
     }
 
     @include desktop {
-
       &--1 {
         width: 470px;
       }
@@ -460,9 +455,9 @@
 
     @include tablet {
       width: 340px;
-     }
+    }
 
-    @include desktop{
+    @include desktop {
       width: 380px;
     }
 
@@ -508,5 +503,3 @@
     }
   }
 }
-
-
