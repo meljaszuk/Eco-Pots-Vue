@@ -1,9 +1,9 @@
 <template>
-  <div class="basket" id="cart">
+  <div class="basket" :class="{ cartON: isCartOpen }">
     <div class="basket__product-box">
       <h2 class="basket__h2">YOUR BASKET</h2>
     </div>
-    <a href="#header">
+    <a @click="toggleCart">
       <img src="/icons/cross-black.svg" alt=" " class="basket__close" />
     </a>
 
@@ -109,6 +109,6 @@
 <script>
 export default {
   name: "Cart",
-  inject: ["handleNotReady"],
+  inject: ["handleNotReady", "isCartOpen", "toggleCart"],
 };
 </script>
