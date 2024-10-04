@@ -1,30 +1,33 @@
 .basket {
   background-color: white;
   position: fixed;
+  display: flex;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   min-height: 100vh;
   transform: translateY(-100%);
   transition: transform 0.4s ease-in-out;
   z-index: 100;
-  overflow: auto;
-  padding: 0 35px 100px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /*   padding: 0 35px 100px; */
   flex-direction: column;
 
   @include alert-on;
 
   @include mobile {
-    width: 80vw;
+    width: 100%;
   }
 
   @include tablet {
-    width: 95vw;
+    width: 100%;
   }
 
-  &:target {
+  /*   &:target {
     transform: translateY(0);
-  }
+  } */
 
   &__close {
     position: absolute;
@@ -81,9 +84,11 @@
   &__product {
     display: flex;
     gap: 10px 10px;
+    justify-content: space-around;
     border: solid 1px $grey;
     box-sizing: border-box;
     padding: 15px;
+    width: 80%;
 
     @include mobile {
       flex-direction: column;
@@ -125,4 +130,9 @@
       cursor: pointer;
     }
   }
+}
+
+.cartON {
+  transform: translateY(0);
+  transition: transform 0.4s ease-in-out;
 }
