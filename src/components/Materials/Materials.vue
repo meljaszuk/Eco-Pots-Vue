@@ -23,6 +23,8 @@
         <div class="swiper-wrapper">
           <div
             class="materials__circle materials__circle--1 content__dont-display-on-mobile"
+            @click="toggle(1)"
+            :class="{ clicked: isToggled[0] }"
           ></div>
 
           <div class="swiper-slide swiper-slide--1">
@@ -34,6 +36,8 @@
 
           <div
             class="materials__circle materials__circle--2 content__dont-display-on-mobile"
+            @click="toggle(2)"
+            :class="{ clicked: isToggled[1] }"
           ></div>
 
           <div class="swiper-slide swiper-slide--2">
@@ -45,8 +49,8 @@
 
           <div
             class="materials__circle materials__circle--3 content__dont-display-on-mobile"
-            @click="toggle"
-            :class="{ clicked: isToggled }"
+            @click="toggle(3)"
+            :class="{ clicked: isToggled[2] }"
           ></div>
 
           <div class="swiper-slide swiper-slide--3">
@@ -59,6 +63,8 @@
 
           <div
             class="materials__circle materials__circle--4 content__dont-display-on-mobile"
+            @click="toggle(4)"
+            :class="{ clicked: isToggled[3] }"
           ></div>
 
           <div class="swiper-slide swiper-slide--4">
@@ -71,6 +77,8 @@
 
           <div
             class="materials__circle materials__circle--5 content__dont-display-on-mobile"
+            @click="toggle(5)"
+            :class="{ clicked: isToggled[4] }"
           ></div>
 
           <div class="swiper-slide swiper-slide--5">
@@ -97,10 +105,10 @@ export default {
   name: "Materials",
 
   setup() {
-    const isToggled = ref(false);
+    const isToggled = ref([false, false, false, false, false]);
 
-    const toggle = () => {
-      isToggled.value = !isToggled.value;
+    const toggle = (num) => {
+      isToggled.value[num - 1] = !isToggled.value[num - 1];
     };
 
     return { isToggled, toggle };
