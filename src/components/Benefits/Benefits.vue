@@ -68,7 +68,7 @@
 
         <div class="benefits__2">
           <div class="benefits__button-box">
-            <a class="buttons button--double" href="#cart"> BUY NOW </a>
+            <a class="buttons button--double" @click="toggleCart"> BUY NOW </a>
           </div>
 
           <div class="benefits__discount">50% off</div>
@@ -87,5 +87,6 @@
 <script>
 export default {
   name: "Benefits",
+  inject: ["toggleCart"],
 };
 </script>
