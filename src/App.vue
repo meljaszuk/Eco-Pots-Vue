@@ -10,20 +10,23 @@ import Contact from "./components/Contact/Contact.vue";
 import Footer from "./components/Footer/Footer.vue";
 import Cart from "./components/Cart/Cart.vue";
 import ScreenAlert from "./components/ScreenAlert/ScreenAlert.vue";
+import Global from "./components/Global/Global.vue";
 </script>
 
 <template>
-  <Header />
-  <main>
-    <ForWhom />
-    <Features />
-    <Team />
-    <Materials />
-    <Product />
-    <Benefits />
-    <Contact />
-  </main>
-  <Footer />
-  <Cart />
-  <ScreenAlert />
+  <Global>
+    <Header />
+    <main>
+      <ForWhom />
+      <Features />
+      <Team />
+      <Materials />
+      <Product />
+      <Benefits />
+      <Contact />
+    </main>
+    <Footer />
+    <Cart />
+    <ScreenAlert />
+  </Global>
 </template>
