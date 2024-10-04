@@ -45,6 +45,8 @@
 
           <div
             class="materials__circle materials__circle--3 content__dont-display-on-mobile"
+            @click="toggle"
+            :class="{ clicked: isToggled }"
           ></div>
 
           <div class="swiper-slide swiper-slide--3">
@@ -89,7 +91,19 @@
 </template>
 
 <script>
+import { ref } from "vue";
+
 export default {
-  name: "XXX",
+  name: "Materials",
+
+  setup() {
+    const isToggled = ref(false);
+
+    const toggle = () => {
+      isToggled.value = !isToggled.value;
+    };
+
+    return { isToggled, toggle };
+  },
 };
 </script>
