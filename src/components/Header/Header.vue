@@ -14,7 +14,7 @@
           <div class="content__dont-display-on-large-screen">
             <a
               class="header__nav-link header__underline content__dont-display-on-large-screen"
-              href="#cart"
+              @click="toggleCart"
             >
               Basket
             </a>
@@ -80,7 +80,7 @@
 
       <a
         class="header__graphic-link content__dont-display-on-small-screen"
-        href="#cart"
+        @click="toggleCart"
       >
         <img
           src="/icons/cart.svg"
@@ -124,7 +124,7 @@
     <div class="header__info">Get the second order in half price</div>
 
     <div class="header__button-box">
-      <a class="button--primary2" href="#cart"> BUY NOW </a>
+      <a class="button--primary2" @click="toggleCart"> BUY NOW </a>
     </div>
 
     <a href="#for_whom">
@@ -142,5 +142,6 @@
 <script>
 export default {
   name: "Header",
+  inject: ["toggleCart"],
 };
 </script>
