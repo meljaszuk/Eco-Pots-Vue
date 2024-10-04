@@ -17,8 +17,6 @@
           />
         </div>
 
-        <div class="basket__name">Large Pot (1.5 litres):</div>
-
         <div class="basket__item">
           <button class="basket__minus large-pot">-</button>
           <div class="basket__volume-large-pot basket__field">0</div>
@@ -51,8 +49,6 @@
             class="basket__img"
           />
         </div>
-
-        <div class="basket__name">Small Pot (0.4 litres):</div>
 
         <div class="basket__item">
           <button class="basket__minus small-pot">-</button>
