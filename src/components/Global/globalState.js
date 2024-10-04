@@ -6,7 +6,12 @@ export function useGlobalState() {
 
   const toggleCart = () => {
     isCartOpen.value = !isCartOpen.value;
-    console.log("cart toggled");
+
+    if (isCartOpen.value) {
+      document.body.classList.add("locked");
+    } else {
+      document.body.classList.remove("locked");
+    }
   };
 
   return {
