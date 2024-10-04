@@ -47,7 +47,7 @@
             ></textarea>
           </div>
 
-          <button class="button button--primary" onclick="submitForm()">
+          <button class="button button--primary" @click="handleNotReady">
             Submit
           </button>
         </form>
@@ -95,5 +95,6 @@
 <script>
 export default {
   name: "Contact",
+  inject: ["handleNotReady"],
 };
 </script>
