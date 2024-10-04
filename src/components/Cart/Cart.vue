@@ -95,7 +95,10 @@
       <div class="button-container">
         <div class="not-ready-text">Feature has not been added.</div>
 
-        <button class="button button--primary2 not-ready" @click="handleButton">
+        <button
+          class="button button--primary2 not-ready"
+          @click="handleNotReady"
+        >
           ORDER
         </button>
       </div>
@@ -106,10 +109,6 @@
 <script>
 export default {
   name: "Cart",
-  methods: {
-    handleButton() {
-      alert("Feature has been not implemented");
-    },
-  },
+  inject: ["handleNotReady"],
 };
 </script>
