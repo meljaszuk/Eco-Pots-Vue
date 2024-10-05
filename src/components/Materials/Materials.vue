@@ -27,7 +27,10 @@
             :class="{ clicked: isToggled[0] }"
           ></div>
 
-          <div class="swiper-slide swiper-slide--1">
+          <div
+            class="swiper-slide swiper-slide--1"
+            :class="{ clicked: isToggled[0] }"
+          >
             <article class="materials__p">
               POTR Pots are constructed using recycled polypropylene which can
               be fully recycled.
@@ -40,7 +43,10 @@
             :class="{ clicked: isToggled[1] }"
           ></div>
 
-          <div class="swiper-slide swiper-slide--2">
+          <div
+            class="swiper-slide swiper-slide--2"
+            :class="{ clicked: isToggled[1] }"
+          >
             <article class="materials__p">
               POTR pots are flat pack, origami planters designed to self-water
               your plants, made from recycled materials.
@@ -53,7 +59,10 @@
             :class="{ clicked: isToggled[2] }"
           ></div>
 
-          <div class="swiper-slide swiper-slide--3">
+          <div
+            class="swiper-slide swiper-slide--3"
+            :class="{ clicked: isToggled[2] }"
+          >
             <article class="materials__p">
               Once assembled the cotton cord doubles as the watering system,
               allowing your plants to self-regulate their water intake using
@@ -67,7 +76,10 @@
             :class="{ clicked: isToggled[3] }"
           ></div>
 
-          <div class="swiper-slide swiper-slide--4">
+          <div
+            class="swiper-slide swiper-slide--4"
+            :class="{ clicked: isToggled[3] }"
+          >
             <article class="materials__p">
               Shipped flat packed so they can be slipped through your letterbox,
               POTR Pots have the smallest carbon footprint possible during
@@ -81,7 +93,10 @@
             :class="{ clicked: isToggled[4] }"
           ></div>
 
-          <div class="swiper-slide swiper-slide--5">
+          <div
+            class="swiper-slide swiper-slide--5"
+            :class="{ clicked: isToggled[4] }"
+          >
             <article class="materials__p">
               We have chosen Bobbiny recycled cotton cord to use as our draw
               string and wicking cord. Not only is it 100% recycled, it looks
