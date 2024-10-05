@@ -6,14 +6,31 @@
 
 <script setup>
 import { provide } from "vue";
-import { useGlobalState } from "./globalState.js"; // Zaimportuj globalny stan
+import { useGlobalState } from "./globalState.js";
 
-// Uzyskaj globalny stan i funkcję toggle
-const { isCartOpen, toggleCart } = useGlobalState();
+const {
+  isCartOpen,
+  toggleCart,
+  largePotsQ,
+  smallPotsQ,
+  largePotsVal,
+  smallPotsVal,
+  increment,
+  decrement,
+  PRICE_LARGE,
+  PRICE_SMALL,
+} = useGlobalState();
 
-// Udostępnij stan globalny za pomocą provide
 provide("isCartOpen", isCartOpen);
 provide("toggleCart", toggleCart);
+provide("largePotsQ", largePotsQ);
+provide("smallPotsQ,", smallPotsQ);
+provide("largePotsVal", largePotsVal);
+provide("smallPotsVal", smallPotsVal);
+provide("increment", increment);
+provide("decrement", decrement);
+provide("PRICE_LARGE", PRICE_LARGE);
+provide("PRICE_SMALL", PRICE_SMALL);
 </script>
 
 <script>

@@ -105,6 +105,18 @@
 <script>
 export default {
   name: "Cart",
-  inject: ["handleNotReady", "isCartOpen", "toggleCart"],
+  inject: [
+    "handleNotReady",
+    "isCartOpen",
+    "toggleCart",
+    "increment",
+    "decrement",
+    "largePotsQ",
+    "smallPotsQ",
+    "largePotsVal",
+    "smallPotsVal",
+    "PRICE_LARGE",
+    "PRICE_SMALL",
+  ],
 };
 </script>
