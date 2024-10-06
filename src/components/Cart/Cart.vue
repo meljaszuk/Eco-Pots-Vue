@@ -14,6 +14,7 @@
             src="/images/productA.jpg"
             alt="large potr pot"
             class="basket__img"
+            :class="{ noproducts: largePotsQ === 0 }"
           />
         </div>
 
@@ -35,7 +36,12 @@
             <strong> Price: </strong>
           </div>
 
-          <div class="basket__price basket__field">$ {{ PRICE_LARGE }}</div>
+          <div
+            class="basket__price basket__field"
+            :class="{ noproducts: largePotsQ === 0 }"
+          >
+            $ {{ PRICE_LARGE }}
+          </div>
         </div>
 
         <div class="basket__item">
@@ -43,7 +49,10 @@
             <strong> Value: </strong>
           </div>
 
-          <div class="basket__value-large-pot basket__field">
+          <div
+            class="basket__value-large-pot basket__field"
+            :class="{ noproducts: largePotsQ === 0 }"
+          >
             $ {{ largePotsVal }}
           </div>
         </div>
@@ -55,6 +64,7 @@
             src="/images/productB.jpg"
             alt="small potr pot"
             class="basket__img"
+            :class="{ noproducts: smallPotsQ === 0 }"
           />
         </div>
 
@@ -77,7 +87,12 @@
             <strong> Price: </strong>
           </div>
 
-          <div class="basket__price basket__field">$ {{ PRICE_SMALL }}</div>
+          <div
+            class="basket__price basket__field"
+            :class="{ noproducts: smallPotsQ === 0 }"
+          >
+            $ {{ PRICE_SMALL }}
+          </div>
         </div>
 
         <div class="basket__item">
@@ -85,7 +100,10 @@
             <strong> Value: </strong>
           </div>
 
-          <div class="basket__value-small-pot basket__field">
+          <div
+            class="basket__value-small-pot basket__field"
+            :class="{ noproducts: smallPotsQ === 0 }"
+          >
             $ {{ smallPotsVal }}
           </div>
         </div>
