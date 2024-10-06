@@ -12,7 +12,7 @@ export function useGlobalState() {
   const PRICE_SMALL = 4.5;
 
   const largePotsQ = ref(1);
-  const smallPotsQ = ref(1);
+  const smallPotsQ = ref(0);
 
   const largePotsVal = computed(() => largePotsQ.value * PRICE_LARGE);
   const smallPotsVal = computed(() => smallPotsQ.value * PRICE_SMALL);
