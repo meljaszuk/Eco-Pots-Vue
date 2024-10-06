@@ -19,18 +19,22 @@ const {
   decrement,
   PRICE_LARGE,
   PRICE_SMALL,
+  cartVal,
+  cartQ,
 } = useGlobalState();
 
 provide("isCartOpen", isCartOpen);
 provide("toggleCart", toggleCart);
 provide("largePotsQ", largePotsQ);
-provide("smallPotsQ,", smallPotsQ);
+provide("smallPotsQ", smallPotsQ);
 provide("largePotsVal", largePotsVal);
 provide("smallPotsVal", smallPotsVal);
 provide("increment", increment);
 provide("decrement", decrement);
 provide("PRICE_LARGE", PRICE_LARGE);
 provide("PRICE_SMALL", PRICE_SMALL);
+provide("cartQ", cartQ);
+provide("cartVal", cartVal);
 </script>
 
 <script>

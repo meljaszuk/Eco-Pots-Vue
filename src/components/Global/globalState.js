@@ -1,48 +1,42 @@
-// globalState.js
-import { ref } from "vue";
+import { ref, computed } from "vue";
 
 export function useGlobalState() {
   const isCartOpen = ref(false);
 
   const toggleCart = () => {
     isCartOpen.value = !isCartOpen.value;
-
-    if (isCartOpen.value) {
-      document.body.classList.add("locked");
-    } else {
-      document.body.classList.remove("locked");
-    }
+    document.body.classList.toggle("locked", isCartOpen.value);
   };
 
   const PRICE_LARGE = 7.5;
-  const PRICE_SMALL = 5.0;
+  const PRICE_SMALL = 4.5;
 
-  const largePotsQ = ref(0);
-  const smallPotsQ = ref(0);
+  const largePotsQ = ref(1);
+  const smallPotsQ = ref(1);
 
-  const largePotsVal = ref(0);
-  const smallPotsVal = ref(0);
+  // Computed properties for values based on pot quantities
+  const largePotsVal = computed(() => largePotsQ.value * PRICE_LARGE);
+  const smallPotsVal = computed(() => smallPotsQ.value * PRICE_SMALL);
+
+  // Total quantities and values
+  const cartQ = computed(() => largePotsQ.value + smallPotsQ.value);
+  const cartVal = computed(() => largePotsVal.value + smallPotsVal.value);
 
   const increment = (product) => {
     if (product === "L") {
-      largePotsQ++;
+      largePotsQ.value++;
     } else if (product === "S") {
-      smallPotsQ++;
+      smallPotsQ.value++;
     }
   };
 
   const decrement = (product) => {
-    if (product === "L" && largePotsQ > 0) {
-      largePotsQ++;
-    } else if (product === "S" && smallPotsQ > 0) {
-      smallPotsQ++;
+    if (product === "L" && largePotsQ.value > 0) {
+      largePotsQ.value--;
+    } else if (product === "S" && smallPotsQ.value > 0) {
+      smallPotsQ.value--;
     }
   };
-
-  const updateValues = () => {
-    largePotsVal = largePotsQ * PRICE_LARGE;
-    smallPotsVal = smallPotsQ * PRICE_SMALL;
-  }
 
   return {
     isCartOpen,
@@ -55,5 +49,7 @@ export function useGlobalState() {
     decrement,
     PRICE_LARGE,
     PRICE_SMALL,
+    cartVal,
+    cartQ,
   };
 }

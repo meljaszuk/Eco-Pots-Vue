@@ -18,10 +18,16 @@
         </div>
 
         <div class="basket__item">
-          <button class="basket__minus large-pot">-</button>
-          <div class="basket__volume-large-pot basket__field">0</div>
+          <button class="basket__minus large-pot" @click="decrement('L')">
+            -
+          </button>
+          <div class="basket__volume-large-pot basket__field">
+            {{ largePotsQ }}
+          </div>
 
-          <button class="basket__plus large-pot">+</button>
+          <button class="basket__plus large-pot" @click="increment('L')">
+            +
+          </button>
         </div>
 
         <div class="basket__item">
@@ -29,7 +35,7 @@
             <strong> Price: </strong>
           </div>
 
-          <div class="basket__price basket__field">$ 7.5</div>
+          <div class="basket__price basket__field">$ {{ PRICE_LARGE }}</div>
         </div>
 
         <div class="basket__item">
@@ -37,7 +43,9 @@
             <strong> Value: </strong>
           </div>
 
-          <div class="basket__value-large-pot basket__field">$ 0</div>
+          <div class="basket__value-large-pot basket__field">
+            $ {{ largePotsVal }}
+          </div>
         </div>
       </div>
 
@@ -51,11 +59,17 @@
         </div>
 
         <div class="basket__item">
-          <button class="basket__minus small-pot">-</button>
+          <button class="basket__minus small-pot" @click="decrement('S')">
+            -
+          </button>
 
-          <div class="basket__volume-small-pot basket__field">0</div>
+          <div class="basket__volume-small-pot basket__field">
+            {{ smallPotsQ }}
+          </div>
 
-          <button class="basket__plus small-pot">+</button>
+          <button class="basket__plus small-pot" @click="increment('S')">
+            +
+          </button>
         </div>
 
         <div class="basket__item">
@@ -63,7 +77,7 @@
             <strong> Price: </strong>
           </div>
 
-          <div class="basket__price basket__field">$ 4.5</div>
+          <div class="basket__price basket__field">$ {{ PRICE_SMALL }}</div>
         </div>
 
         <div class="basket__item">
@@ -71,7 +85,9 @@
             <strong> Value: </strong>
           </div>
 
-          <div class="basket__value-small-pot basket__field">$ 0</div>
+          <div class="basket__value-small-pot basket__field">
+            $ {{ smallPotsVal }}
+          </div>
         </div>
       </div>
 
@@ -79,12 +95,12 @@
         <div class="basket__item">
           <strong> PRODUCTS TOTAL: </strong>
 
-          <div class="basket__volume-total basket__field">0</div>
+          <div class="basket__volume-total basket__field">{{ cartQ }}</div>
         </div>
 
         <div class="basket__item">
           <strong> TOTAL VALUE: </strong>
-          <div class="basket__value-total basket__field">$ 0</div>
+          <div class="basket__value-total basket__field">$ {{ cartVal }}</div>
         </div>
       </div>
 
@@ -117,6 +133,8 @@ export default {
     "smallPotsVal",
     "PRICE_LARGE",
     "PRICE_SMALL",
+    "cartQ",
+    "cartVal",
   ],
 };
 </script>
