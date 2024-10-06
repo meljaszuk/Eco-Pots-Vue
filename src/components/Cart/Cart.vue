@@ -19,7 +19,11 @@
         </div>
 
         <div class="basket__item">
-          <button class="basket__minus large-pot" @click="decrement('L')">
+          <button
+            class="basket__minus large-pot"
+            @click="decrement('L')"
+            :class="{ noproducts: largePotsQ === 0 }"
+          >
             -
           </button>
           <div class="basket__volume-large-pot basket__field">
@@ -69,7 +73,11 @@
         </div>
 
         <div class="basket__item">
-          <button class="basket__minus small-pot" @click="decrement('S')">
+          <button
+            class="basket__minus small-pot"
+            @click="decrement('S')"
+            :class="{ noproducts: smallPotsQ === 0 }"
+          >
             -
           </button>
 
