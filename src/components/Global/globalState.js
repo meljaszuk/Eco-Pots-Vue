@@ -14,11 +14,9 @@ export function useGlobalState() {
   const largePotsQ = ref(1);
   const smallPotsQ = ref(1);
 
-  // Computed properties for values based on pot quantities
   const largePotsVal = computed(() => largePotsQ.value * PRICE_LARGE);
   const smallPotsVal = computed(() => smallPotsQ.value * PRICE_SMALL);
 
-  // Total quantities and values
   const cartQ = computed(() => largePotsQ.value + smallPotsQ.value);
   const cartVal = computed(() => largePotsVal.value + smallPotsVal.value);
 
