@@ -24,7 +24,7 @@
             class="header__space content__dont-display-on-large-screen"
           ></div>
 
-          <div class="basket__total header__product-number">0</div>
+          <div class="basket__total header__product-number">{{ cartQ }}</div>
         </li>
 
         <li class="header__nav-item">
@@ -142,6 +142,6 @@
 <script>
 export default {
   name: "Header",
-  inject: ["toggleCart"],
+  inject: ["toggleCart", "cartQ"],
 };
 </script>
