@@ -1,4 +1,4 @@
-import { ref, computed, onMounted, watch } from "vue";
+import { ref, computed, onMounted, watch, onBeforeUnmount } from "vue";
 
 export function useGlobalState() {
   const isCartOpen = ref(false);
@@ -25,7 +25,19 @@ export function useGlobalState() {
     if (savedSmallPotsQ !== null) {
       smallPotsQ.value = Number(savedSmallPotsQ); // Przypisanie ilości z localStorage
     }
+
+    window.addEventListener("resize", handleResize);
   });
+
+  onBeforeUnmount(() => {
+    window.removeEventListener("resize", handleResize);
+  });
+
+  const handleResize = () => {
+    if (window.innerWidth !== initialWidth.value) {
+      location.reload(); // Przeładuj stronę, jeśli szerokość okna się zmieniła
+    }
+  };
 
   const largePotsVal = computed(() => largePotsQ.value * PRICE_LARGE);
   const smallPotsVal = computed(() => smallPotsQ.value * PRICE_SMALL);
