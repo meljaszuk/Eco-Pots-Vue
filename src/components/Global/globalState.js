@@ -1,4 +1,4 @@
-import { ref, computed } from "vue";
+import { ref, computed, onMounted, watch } from "vue";
 
 export function useGlobalState() {
   const isCartOpen = ref(false);
@@ -13,6 +13,19 @@ export function useGlobalState() {
 
   const largePotsQ = ref(1);
   const smallPotsQ = ref(0);
+
+  onMounted(() => {
+    const savedLargePotsQ = localStorage.getItem("largePotsQinLC");
+    const savedSmallPotsQ = localStorage.getItem("smallPotsQinLC");
+
+    if (savedLargePotsQ !== null) {
+      largePotsQ.value = Number(savedLargePotsQ); // Przypisanie ilości z localStorage
+    }
+
+    if (savedSmallPotsQ !== null) {
+      smallPotsQ.value = Number(savedSmallPotsQ); // Przypisanie ilości z localStorage
+    }
+  });
 
   const largePotsVal = computed(() => largePotsQ.value * PRICE_LARGE);
   const smallPotsVal = computed(() => smallPotsQ.value * PRICE_SMALL);
@@ -35,6 +48,14 @@ export function useGlobalState() {
       smallPotsQ.value--;
     }
   };
+
+  watch(largePotsQ, (newCount) => {
+    localStorage.setItem("largePotsQinLC", newCount);
+  });
+
+  watch(smallPotsQ, (newCount) => {
+    localStorage.setItem("smallPotsQinLC", newCount);
+  });
 
   return {
     isCartOpen,
