@@ -6,7 +6,7 @@ I took on the demanding task of coding the **frontend** for the POTR pots landin
 
 ## Update:
 
-The original project was developed using HTML and SCSS in a different repository. I migrated the original files and upgraded the project to use **Vue and Vite**, incorporating cart management based on global state.
+The original project was developed using HTML and SCSS in a different repository. I migrated the original files and upgraded the project to use **Vue and Vite**, incorporating cart management based on global state. The number of products is stored in local storage, and material selection is also managed through the global state.
 
 ## Key Features:
 
