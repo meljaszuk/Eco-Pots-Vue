@@ -1,5 +1,5 @@
-  .footer {
-    @include alert-on;
+.footer {
+  @include alert-on;
 
   display: flex;
 
@@ -51,7 +51,6 @@
 
     display: flex;
     justify-content: center;
-
   }
 
   &__logo-box {
@@ -73,14 +72,14 @@
   }
 
   &__twit {
-  background-image: url('././icons/twitter.svg');
-  background-repeat: no-repeat;
+    background-image: url("/icons/twitter.svg");
+    background-repeat: no-repeat;
 
     @include mobile {
       @include small-icon-size;
 
       background-size: contain;
-     }
+    }
 
     @include tablet {
       @include small-icon-size;
@@ -93,8 +92,8 @@
     @include icon-animation;
   }
 
-    &__insta {
-    background-image: url('././icons/instagram.svg');
+  &__insta {
+    background-image: url("/icons/instagram.svg");
 
     @include mobile {
       @include small-icon-size;
@@ -116,7 +115,7 @@
   }
 
   &__fb {
-    background-image: url('././icons/facebook.svg');
+    background-image: url("/icons/facebook.svg");
 
     @include mobile {
       @include small-icon-size;
@@ -135,7 +134,5 @@
     background-repeat: no-repeat;
 
     @include icon-animation;
-
-
   }
 }
