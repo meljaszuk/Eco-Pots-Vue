@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   transform: translateX(0);
-  background-image: url('./images/shape.png');
+  background-image: url("/images/shape.png");
   background-repeat: no-repeat;
 
   @include mobile {
@@ -20,39 +20,39 @@
   }
 
   &__h2 {
-  z-index: 2;
-  display: flex;
+    z-index: 2;
+    display: flex;
 
-  @include mobile {
-    @include font-h2;
+    @include mobile {
+      @include font-h2;
 
-    padding: 0 $mobile-padding;
-  }
+      padding: 0 $mobile-padding;
+    }
 
-  @include tablet {
-    @include font-h1;
+    @include tablet {
+      @include font-h1;
 
-    padding-bottom: 177px;
-    width: 590px;
-    padding-left: calc($tablet-mb + $tablet-padding);
-  }
+      padding-bottom: 177px;
+      width: 590px;
+      padding-left: calc($tablet-mb + $tablet-padding);
+    }
 
-  @include desktop {
-    padding-bottom: 143px;
-    padding-left: calc($desktop-mb + $desktop-padding);
-  }
+    @include desktop {
+      padding-bottom: 143px;
+      padding-left: calc($desktop-mb + $desktop-padding);
+    }
   }
 
   &__names {
-  -webkit-text-stroke: 1px $turquoise;
-  color: transparent;
-  font-family: $font-h;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  letter-spacing: 44.64px;
-  position: absolute;
-  z-index: 3;
+    -webkit-text-stroke: 1px $turquoise;
+    color: transparent;
+    font-family: $font-h;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 44.64px;
+    position: absolute;
+    z-index: 3;
 
     @include tablet {
       font-size: 210px;
@@ -84,11 +84,10 @@
         top: 460px;
         right: 0;
         overflow: hidden;
-
       }
 
       @include desktop {
-        left:  auto;
+        left: auto;
         right: 0;
         top: 655px;
       }
@@ -118,7 +117,6 @@
       width: 330px;
     }
 
-
     @include desktop {
       width: 336px;
       padding: 230px 60px 0 0;
@@ -136,12 +134,12 @@
 
     @include tablet {
       flex-direction: row;
-      padding-left: calc($tablet-mb + $tablet-padding)
+      padding-left: calc($tablet-mb + $tablet-padding);
     }
 
     @include desktop {
       padding-bottom: 70px;
-      padding-left: calc($desktop-mb + $desktop-padding)
+      padding-left: calc($desktop-mb + $desktop-padding);
     }
   }
 

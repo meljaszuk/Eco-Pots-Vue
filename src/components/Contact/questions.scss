@@ -13,7 +13,6 @@
     }
   }
 
-
   @include alert-on;
 
   @include mobile {
@@ -22,17 +21,16 @@
     box-sizing: border-box;
     padding: $mobile-padding;
     background-size: cover;
-    background-image: url('././images/shape.png');
+    background-image: url("/images/shape.png");
   }
 
-
   @include tablet {
-      padding: 30px calc($tablet-mb + $tablet-padding) 130px;
-      column-gap: 90px;
-      background-position: left 0;
-      flex-direction: row;
-      background-size: auto;
-      background-image: url('././images/shape2.png');
+    padding: 30px calc($tablet-mb + $tablet-padding) 130px;
+    column-gap: 90px;
+    background-position: left 0;
+    flex-direction: row;
+    background-size: auto;
+    background-image: url("/images/shape2.png");
   }
 
   @include desktop {
@@ -48,27 +46,25 @@
     top: -90px;
     background-repeat: no-repeat;
 
-
     @include mobile {
       right: 0;
-      background-image: url('././images/stamp2.png');
+      background-image: url("/images/stamp2.png");
       width: 118px;
       height: 162px;
     }
 
     @include tablet {
       right: 0;
-      background-image: url('././images/stamp2.png');
+      background-image: url("/images/stamp2.png");
       width: 118px;
       height: 162px;
     }
 
     @include desktop {
       left: calc($desktop-mb + 1050px);
-      background-image: url('././images/stamp.png');
+      background-image: url("/images/stamp.png");
       width: 162px;
       height: 162px;
-
     }
   }
 
