@@ -88,6 +88,7 @@
           class="header__menu content__graphic-link content__dont-display-on-small-screen"
         />
       </a>
+      <div class="header__total header__product-number">{{ cartQ }}</div>
     </nav>
 
     <img src="/images/potr_pots_1.jpg" alt="potr pots" class="header__image" />

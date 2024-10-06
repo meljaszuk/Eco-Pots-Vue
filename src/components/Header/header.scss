@@ -406,3 +406,20 @@
     }
   }
 }
+
+.header__total {
+  @include mobile {
+    display: none;
+  }
+  @include desktop {
+    display: flex;
+    position: absolute;
+    z-index: 150;
+    top: 30px;
+    left: calc((100% + 1110px) / 2);
+  }
+}
+
+.content__graphic-link {
+  transform: none !important;
+}
