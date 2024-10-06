@@ -21,14 +21,10 @@ const {
   PRICE_SMALL,
   cartVal,
   cartQ,
-  isMenuOpen,
-  openSlideMenu,
 } = useGlobalState();
 
 provide("isCartOpen", isCartOpen);
 provide("toggleCart", toggleCart);
-provide("isMenuOpen", isMenuOpen);
-provide("openSlideMenu", openSlideMenu);
 provide("largePotsQ", largePotsQ);
 provide("smallPotsQ", smallPotsQ);
 provide("largePotsVal", largePotsVal);

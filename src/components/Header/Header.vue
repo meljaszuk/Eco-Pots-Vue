@@ -64,7 +64,6 @@
                 src="/icons/cross.svg"
                 alt=" "
                 class="content__dont-display-on-large-screen"
-                @click="openSlideMenu"
               />
             </div>
           </a>
@@ -76,7 +75,6 @@
           src="/icons/burger_menu.svg"
           alt="POTR POTS explore"
           class="header__menu content__graphic-link content__dont-display-on-large-screen"
-          @click="openSlideMenu"
         />
       </a>
 
@@ -145,6 +143,6 @@
 <script>
 export default {
   name: "Header",
-  inject: ["toggleCart", "cartQ", "isMenuOpen", "openSlideMenu"],
+  inject: ["toggleCart", "cartQ"],
 };
 </script>

@@ -2,28 +2,11 @@ import { ref, computed, onMounted, watch, onBeforeUnmount } from "vue";
 
 export function useGlobalState() {
   const isCartOpen = ref(false);
-  const isMenuOpen = ref(false);
+  const initialWidth = ref(window.innerWidth);
 
   const toggleCart = () => {
     isCartOpen.value = !isCartOpen.value;
-    handleBCG();
-  };
-
-  const openSlideMenu = () => {
-    isMenuOpen.value = !isMenuOpen.value;
-    handleBCG();
-  };
-
-  const handleBCG = () => {
-    if (isMenuOpen.value || isCartOpen.value) {
-      document.body.classList.add("locked");
-    }
-
-    if (!isMenuOpen.value && !isCartOpen.value) {
-      document.body.classList.remove("locked");
-    }
-
-    console.log("menu", isMenuOpen.value, "cart", isCartOpen.value);
+    document.body.classList.toggle("locked");
   };
 
   const PRICE_LARGE = 7.5;
@@ -54,6 +37,7 @@ export function useGlobalState() {
   const handleResize = () => {
     if (window.innerWidth !== initialWidth.value) {
       location.reload();
+      isBcgLocked.value = false;
     }
   };
 
@@ -100,7 +84,5 @@ export function useGlobalState() {
     PRICE_SMALL,
     cartVal,
     cartQ,
-    isMenuOpen,
-    openSlideMenu,
   };
 }
