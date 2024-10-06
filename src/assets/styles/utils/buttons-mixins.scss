@@ -7,7 +7,7 @@
   color: $white;
   border: 0;
   padding-left: 70px;
-  background-image: url('././icons/arrow-white.svg');
+  background-image: url("/icons/arrow-white.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 161px;
@@ -32,7 +32,7 @@
   color: $primary;
   border: 1px solid $yellow;
   justify-content: flex-start;
-  background-image: url('././icons/arrow-black.svg');
+  background-image: url("/icons/arrow-black.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 161px;
@@ -57,7 +57,7 @@
   border: 1px solid $turquoise;
   padding-left: 67px;
   box-sizing: border-box;
-  background-image: url('././icons/arrow-black.svg');
+  background-image: url("/icons/arrow-black.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 161px;
@@ -90,11 +90,11 @@
   align-items: center;
   flex-shrink: 0;
   border: 0;
-  background: rgba(3, 128, 158, 0.40);
+  background: rgba(3, 128, 158, 0.4);
   color: $white;
   animation: arrow-animation 1.5s ease-in-out infinite;
   justify-content: flex-start;
-  background-image: url('././icons/arrow-white.svg');
+  background-image: url("/icons/arrow-white.svg");
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 161px;
@@ -134,7 +134,7 @@
   background-color: $turquoise;
   color: $white;
   border: 1px solid $turquoise;
-  background-image: url('././icons/arrow-white.svg');
+  background-image: url("/icons/arrow-white.svg");
   animation: arrow-animation 1.5s ease-in-out infinite;
 
   @media (max-width: 767px) {
