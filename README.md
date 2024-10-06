@@ -2,11 +2,13 @@
 
 ![Tekst zastępczy](src/photo.jpg)
 
-I took on the demanding task of coding the **frontend** for the POTR pots landing page, a project embedded within a comprehensive course. Focused on the complexity of the design, I navigated through intricate layout modifications necessary for optimal display across diverse devices. The project also featured highly interactive sections, adding an additional layer of complexity to the coding challenge. This experience not only showcased my coding skills but also provided an invaluable learning opportunity. It allowed me to implement all key concepts of styling websites in CSS, demonstrating adaptability in addressing the nuances of modern web design and user interaction. This hands-on project significantly enriched my understanding and application of styling techniques, contributing to a well-rounded learning experience.
-
 ## Update:
 
 The original project was developed using HTML and SCSS in a different repository. I migrated the original files and upgraded the project to use **Vue and Vite**, incorporating cart management based on global state. The number of products is stored in local storage, and material selection is also managed through the global state.
+
+## Summary:
+
+I took on the demanding task of coding the **frontend** for the POTR pots landing page, a project embedded within a comprehensive course. Focused on the complexity of the design, I navigated through intricate layout modifications necessary for optimal display across diverse devices. The project also featured highly interactive sections, adding an additional layer of complexity to the coding challenge. This experience not only showcased my coding skills but also provided an invaluable learning opportunity. It allowed me to implement all key concepts of styling websites in CSS, demonstrating adaptability in addressing the nuances of modern web design and user interaction. This hands-on project significantly enriched my understanding and application of styling techniques, contributing to a well-rounded learning experience.
 
 ## Key Features:
 
